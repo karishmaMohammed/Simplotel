@@ -1,0 +1,198 @@
+body{
+    width: 100%;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.topnavBar{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding-left: 40px;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.topnavBar li{
+    color: black;
+    font-size: 16px;
+    list-style: none;
+    font-weight: 650;
+    font-family: sans-serif;
+}
+
+.topnavBar li:hover{
+    color: rgb(248, 131, 150);
+    height: auto;
+    cursor: pointer;
+    
+}
+.navbar-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:10px;
+}
+
+.navbar-icons img{
+    width: 30px;
+    height: 30px;
+}
+.navbar-icons img:hover{
+    cursor: pointer;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/backgroundImage.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: 100% 100%;
+    position: relative;
+}
+.content{
+    position: absolute;
+    top: 33%;
+    left: 5%;
+    width: 40vw;
+    padding: 10px 20px 10px 20px;
+    background-color: rgba(239, 22, 37, 0.323);
+    color: white;
+}
+.content h4{
+    font-weight: 900;
+    font-size: 25px;
+}
+.content p{
+    /* font-size: clamp(1.1rem, 0.7153rem + 1.6368vw, 1.5rem); */
+    font-weight: 500;
+}
+.bottom-container{
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    background-image: linear-gradient(110deg, rgb(236, 149, 193), rgb(233, 152, 81), rgb(233, 206, 57));
+    bottom: 0;
+}
+.order{
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh auto;
+    background-image: linear-gradient(110deg, rgb(218, 117, 167), rgb(233, 152, 81), rgb(233, 206, 57));
+}
+.order h1{
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    letter-spacing: 0.5rem;
+    font-size: 35px;
+
+    
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  align-content: space-between;
+
+}
+.burger,.pizza,.pasta{
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    padding: 15px 5px 15px 5px;
+    border-radius: 0 50px 0 50px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+.burger img{
+    width: 250px;
+    height: 250px;
+    border-radius: 0 50px 0 0;
+}
+.pizza img{
+    width: 250px;
+    height: 250px;
+    border-radius: 0 50px 0 0;
+}
+.pasta img{
+    width: 250px;
+    height: 250px;
+    border-radius: 0 50px 0 0;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    background-color: rgb(250, 206, 215);
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 100px;
+    color: black;
+}
+.btn button:hover{
+    cursor: pointer;
+    background-color: rgb(244, 201, 92);
+}
+
+@media screen and (max-width: 1250px){
+    .topnavBar {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .topnavBar li{
+        font-size: 12px;
+  
+    }
+}
+@media screen and (max-width: 500px){
+    .topnavBar li{
+        font-size: 10px;
+  
+    }
+    .navbar-icons img{
+        width: 15px;
+        height: 15px;
+    }
+}
+@media screen and (max-width: 420px){
+    .navbar-icons img{
+        width: 10px;
+        height: 10px;
+    }
+}
+@media screen and (max-width: 400px){
+    .topnavBar li{
+        font-size: 8px;
+  
+    }
+    .navbar-icons img{
+        width: 8px;
+        height: 8px;
+    }
+    .navbar-icons{
+
+        gap:5px;
+    }
+}
+@media screen and (max-width: 380px){
+    .topnavBar li{
+        font-size:6px;
+  
+    }
+}
